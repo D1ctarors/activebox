@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* HEADER
+==============================*/
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    border-bottom: 1px solid #50536a;
+}
+
+.nav__links {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.75;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 65px;
+    transition: opacity .1s linear;
+}
+
+.nav__links:hover {
+    opacity: 1;
+}
+
+.nav__links:first-child {
+    margin-left: 0;
+}
+
+
+/* INTRO
+==============================*/
+
+.intro {
+    height: 750px;
+    background-image: url(./img/intro-bg.png);
+}
+
+.intro__head {
+    padding-top: 250px;
+    text-align: center;
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    line-height: 1;
+}
+
+.intro__subtitle {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0.75;
+    color: #fff;
+}
+
+.intro__btn {
+    padding: 15px 50px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e24848;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 155px;
+    border-radius: 3px;
+    transition: background .1s linear;
+}
+
+.intro__btn:hover {
+    background-color: #ff0000;
+}
+
+
+/* FEATURES - Особенности
+==============================*/
+
+.features_block {
+    margin: 0;
+    padding: 115px 0;
+    height: 690px;
+    margin: 0 auto;
+}
+
+.features_cards {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+    width: 305px;
+    height: 180px;
+}
+
+.card_ico {
+    margin-bottom: 25px;
+}
+
+.card_title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card_subtitle {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .7;
+}
+
+
+/* WORKS
+==============================*/
+
+.work {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work_card {
+    width: 25%;
+    height: 350px;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    overflow: hidden;
+}
+
+.work_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.work_contant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 350px;
+    width: 100%;
+    background-color: #e34b48;
+    opacity: .0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity .2s linear;
+}
+
+.work_contant:hover {
+    opacity: 0.9;
+}
+
+.work_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.work_subtitle {
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* TEAM
+==============================*/
+
+.team_position {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1170;
+    height: 580px;
+    margin: 100px 0 70px;
+}
+
+.team_card {
+    width: 273px;
+    height: 580px;
+    margin-bottom: 30px;
+}
+
+.ico_team {
+    margin-bottom: 30px
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d3033;
+    margin: 0;
+}
+
+.post {
+    text-transform: uppercase;
+    color: #eb5e5e;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.about_text {
+    font-size: 30xp;
+    color: #2d3033;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.web_links {
+    border: 3px solid #e8ecee;
+    display: inline-flex;
+    align-content: center;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 10px;
+    transition: border .1s linear;
+    border-radius: 5px;
+}
+
+.web_links:hover {
+    border: 3px solid #a7a7a7;
+}
+
+
+/* WOMAN CARD
+==============================*/
+
+.reviews {
+    background-color: #53354a;
+    overflow: hidden;
+}
+
+.reviews_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews_photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.reviews_people {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.reviews_contant {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.reviews_text {
+    font-style: italic;
+    font-family: 'Cardo', sans-serif;
+    font-size: 36px;
+    line-height: 1.2em;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.reviews_name {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* FOOTER
+==============================*/
+
+.download {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+}
+
+.download_title {
+    margin: 0;
+    font-size: 28px;
+}
+
+.download_subtitle {
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+.download__btn {
+    padding: 15px 80px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e24848;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background .1s linear;
+}
+
+.footer__btn:hover {
+    background-color: #ff0000;
+}
+
+
+/* footer_contant
+==============================*/
+
+.footer {
+    padding: 70px 0;
+    background-color: #3a3e64;
+}
+
+.footer_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_block {
+    text-align: center;
+    width: 33.33333%;
+}
+
+.footer_block p {
+    margin: 0;
+}
+
+.footer_item_name {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer_item_contant {
+    color: #fff;
+    opacity: .5;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.social_ico {
+    margin-top: 5px;
+}
+
+.social_links {
+    border: 3px solid #fff;
+    display: inline-flex;
+    align-content: center;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: border .1s linear;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.social_links:hover {
+    border: 2px solid #a7a7a7;
+}
+
+
+/* end_footer
+==============================*/
+
+.end_footer {
+    padding: 30px 0;
+    background-color: #313454;
+    text-align: center;
+}
+
+.end_footer p {
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+    opacity: .8;
+}
+
+.author {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+}
