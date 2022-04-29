@@ -73,7 +73,7 @@ p {
 
 .intro {
     height: 750px;
-    background-image: url(./img/intro-bg.png);
+    background-image: url(../img/intro-bg.png);
 }
 
 .intro__head {
